@@ -1,12 +1,16 @@
 # PM4NGS RNASeq data analysis pipeline 
 
+## Note
+
+This is a PM4NGS pipeline repository. it is not intenteded to be used as a single package. 
+Please, read the PM4NGS documentation for this pipeline: https://pm4ngs.readthedocs.io/en/latest/pipelines
+/rnaseqDGAPipeline.html 
+
 ## Basic requirements
 
 1. Python 3.7.x
 2. PM4NGS 0.0.1
 3. Poppler (https://poppler.freedesktop.org/)
-
-Full list of requirements *requirements/conda-env-dependencies.yaml*
 
 # Public Domain notice
 
