@@ -80,6 +80,14 @@ GENOME_FASTA = '{{ cookiecutter.genome_fasta }}'
 GENOME_GTF = '{{ cookiecutter.genome_gtf }}'
 GENOME_BED = '{{ cookiecutter.genome_bed }}'
 
+if GENOME_NAME == GENOME:
+    GENOME = os.path.join(DATA, GENOME)
+    ALIGNER_INDEX = os.path.join(DATA, ALIGNER_INDEX)
+    GENOME_FASTA = os.path.join(DATA, GENOME_FASTA)
+    GENOME_GTF = os.path.join(DATA, GENOME_GTF)
+    GENOME_BED = os.path.join(DATA, GENOME_BED)
+
+
 ###############################################################
 #
 #    Dataset (experiment) to analyze
