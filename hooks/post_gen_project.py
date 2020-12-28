@@ -77,7 +77,8 @@ def rawdata_file_manager(file):
 
 
 def copy_rawdata_to_project():
-    if COPY_RAWDATA:
+
+    if COPY_RAWDATA == 'True':
         sample_table_file = os.path.join(DATASET_DIR, 'sample_table.csv')
         sample_table = pandas.read_csv(sample_table_file, skip_blank_lines=True)
         sample_table = sample_table.replace(np.nan, '', regex=True)
@@ -98,7 +99,6 @@ def copy_rawdata_to_project():
 
 
 if __name__ == '__main__':
-
     if SAMPLE_TABLE_FILE and COPY_RAWDATA and WORK_DIR:
         conda_dependencies = os.path.join(PROJECT_DIRECTORY, 'requirements', 'conda-env-dependencies.yaml')
         if os.path.exists(conda_dependencies):
