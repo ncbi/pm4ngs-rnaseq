@@ -13,6 +13,7 @@
   "aligner_index_dir": "{{ cookiecutter.genome_dir }}/STAR",
   "genome_fasta": "{{ cookiecutter.genome_dir }}/genome.fa",
   "genome_gtf": "{{ cookiecutter.genome_dir }}/genes.gtf",
+  "genome_gff": "{{ cookiecutter.genome_dir }}/genes.gff",
   "genome_bed": "{{ cookiecutter.genome_dir }}/genes.bed",
   "fold_change": "2.0",
   "fdr": "0.05",
