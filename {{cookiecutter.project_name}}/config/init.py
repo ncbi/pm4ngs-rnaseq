@@ -79,6 +79,7 @@ ALIGNER_INDEX = '{{ cookiecutter.aligner_index_dir }}'
 GENOME_FASTA = '{{ cookiecutter.genome_fasta }}'
 GENOME_GTF = '{{ cookiecutter.genome_gtf }}'
 GENOME_BED = '{{ cookiecutter.genome_bed }}'
+GENOME_GFF = '{{ cookiecutter.genome_gff }}'
 
 if GENOME_NAME == GENOME:
     GENOME = os.path.join(DATA, GENOME)
@@ -86,7 +87,7 @@ if GENOME_NAME == GENOME:
     GENOME_FASTA = os.path.join(DATA, GENOME_FASTA)
     GENOME_GTF = os.path.join(DATA, GENOME_GTF)
     GENOME_BED = os.path.join(DATA, GENOME_BED)
-
+    GENOME_GFF = os.path.join(DATA, GENOME_GFF)
 
 ###############################################################
 #
