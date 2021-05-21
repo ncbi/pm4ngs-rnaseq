@@ -154,7 +154,7 @@ if not DOCKER:
     CWLTOOL_DEPS = os.path.join(BIN,'cwltool_deps')
     CWLRUNNER +=' --no-container --beta-conda-dependencies --beta-dependencies-directory ' + CWLTOOL_DEPS
     try:
-        TRIMMOMATIC_ADAPTERS = str(next(Path(os.path.join(CWLTOOL_DEPS, '_conda', 'envs' )).rglob('__trimmomatic*//share/trimmomatic/adapters')))
+        TRIMMOMATIC_ADAPTERS = str(next(Path(os.path.join(CWLTOOL_DEPS, '_conda', 'envs' )).rglob('__trimmomatic*/share/trimmomatic/adapters')))
     except:
         TRIMMOMATIC_ADAPTERS = ''
 else:
